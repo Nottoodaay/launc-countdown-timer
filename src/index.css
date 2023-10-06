@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: #1D1E28;
+  background-image: url(../assets/bg-stars.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: 'red hat text';
+}
+
+.header{
+  margin-top: 132px;
+  margin-bottom: 104px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  width: 440px;
+  text-align: center;
+}
