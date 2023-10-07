@@ -20,13 +20,198 @@ body{
   font-family: 'red hat text';
 }
 
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 130px;
+}
+
+.app-container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+}
+
 .header{
-  margin-top: 132px;
-  margin-bottom: 104px;
-  color: #ffffff;
   font-size: 22px;
   font-weight: 700;
+  line-height: 24px;
   letter-spacing: 6px;
-  width: 440px;
+  color: #ffffff; 
+}
+
+.time-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.time-container{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.time{
+  height: 150px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #343650;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  box-shadow: 0px 5px 10px black;
+}
+
+hr{
+  width:148px;
+  height:1px;
+  border: none;
+  opacity: 0.25;
+  top: 50%;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+
+.time-numbers{
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -2.4px;
   text-align: center;
+  color: #FB5E84;
+} 
+
+
+.left-oval{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+
+.right-oval{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+}
+
+
+.exact-time{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 6px;
+  color: rgba(131, 133, 169, 1);
+}
+
+
+.footer{
+  width: 100%;
+  height: 200px;
+  background-image: url(../assets/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.icon{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.icon:hover{
+  color:  rgba(251, 94, 132, 1);
+}
+
+
+@media screen and (max-width: 375px) {
+.body{
+  gap: 180px;
+} 
+
+.app-container{
+    margin-top: 40%;
+    gap: 54px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 6px;
+    width: 355px;
+}
+
+.time-container{
+    gap: 16px;
+}
+
+.time{
+    height: 66px;
+    width: 70px;
+    border-radius: 4px;
+    background-color: #343650;
+    position: relative;
+}
+
+hr{
+    width:70px;
+    height:0.5px;
+    border:none;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    top:35px;
+}
+
+.time-numbers{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -1px;
+}
+
+.right-oval{
+    height: 6px;
+    position: absolute;
+    top: 32px;
+    left: 67px;
+}
+
+.left-oval{
+    height: 6px;
+    position: absolute;
+    top: 32px;
+    left: -9px;
+}
+
+.exact-time{
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 9px;
+    letter-spacing: 3px;
+}
+
+.footer{
+    background-position: right 13% bottom;
+    background-size: 245% 100%;
+    height:168px;
+    align-items: center;
+}
+
 }
